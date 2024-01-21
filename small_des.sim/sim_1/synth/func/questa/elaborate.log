@@ -1,6 +1,6 @@
 QuestaSim-64 vopt 2022.4 Compiler 2022.10 Oct 18 2022
 ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-Start time: 00:28:53 on Jan 21,2024
+Start time: 13:56:36 on Jan 21,2024
 vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_D_FLIPFLOP xil_defaultlib.glbl -o tb_D_FLIPFLOP_opt 
 
 Top level modules:
@@ -22,5 +22,5 @@ Analyzing design...
 -- Loading module unisims_ver.FDCE
 Incremental compilation check found no design-units have changed.
 Optimized design name is tb_D_FLIPFLOP_opt
-End time: 00:28:53 on Jan 21,2024, Elapsed time: 0:00:00
+End time: 13:56:36 on Jan 21,2024, Elapsed time: 0:00:00
 Errors: 0, Warnings: 1

@@ -10,6 +10,11 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 R0
 13
@@ -20,7 +25,7 @@ R0
 cModel Technology
 Z1 d/home/azafeer/Desktop/test/small_des/small_des.sim/sim_1/synth/func/questa
 vD_FLIPFLOP
-Z2 !s10a 1705796931
+Z2 !s10a 1705845393
 Z3 !s110 1705787295
 !i10b 1
 !s100 ]R?APR[BK5f@ZYe_0J@XO3
@@ -67,25 +72,25 @@ R11
 R12
 R13
 vtb_D_FLIPFLOP
-!s10a 1705787485
+!s10a 1705844934
 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1705787815
+!s110 1705845232
 !i10b 1
-!s100 X7651OhZnG?c@9IRoEf0M2
-IKl;B]_DOHJWo]Jl4[KVdV0
+!s100 jN_EldDQ?;:P8COoW=2jU0
+I2OzX6Ghf7Lz5Z1f4^AYFa2
 S1
 R1
-w1705787485
+w1705844934
 8../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
 F../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
-!i122 9
-L0 23 63
+!i122 13
+L0 23 70
 R7
 R8
 r1
 !s85 0
 31
-!s108 1705787815.000000
+!s108 1705845231.000000
 !s107 ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
 !s90 -64|-incr|-mfcu|-sv|-work|xil_defaultlib|../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
 !i113 0
@@ -93,8 +98,8 @@ o-64 -mfcu -sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L m
 R13
 ntb_@d_@f@l@i@p@f@l@o@p
 Ttb_D_FLIPFLOP_opt
-!s110 1705796933
-VIbUhTiiO:TTn>m6DW<nG]1
+!s110 1705845396
+VFHE=YO:<iDNb;F]E2>>YI0
 04 13 4 work tb_D_FLIPFLOP fast 0
 04 4 4 work glbl fast 0
 R0

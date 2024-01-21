@@ -9,6 +9,6 @@ set_property LOC SLICE_X96Y237 [get_cells q_reg]
 set_property BEL BUFCE [get_cells clk_IBUF_BUFG_inst]
 set_property LOC BUFGCE_X0Y88 [get_cells clk_IBUF_BUFG_inst]
 
-create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+create_clock -period 10.000 -name clk -waveform {0.000 4.000} [get_ports clk]
 set_input_delay -clock [get_clocks *] 5.000 [get_ports {clear d rst}]
 set_output_delay -clock [get_clocks *] 4.000 [get_ports -filter { NAME =~  "*" && DIRECTION == "OUT" }]

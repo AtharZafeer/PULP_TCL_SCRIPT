@@ -8,7 +8,7 @@ QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
 Modifying modelsim.ini
 QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-Start time: 00:28:52 on Jan 21,2024
+Start time: 13:56:34 on Jan 21,2024
 vlog -64 -incr -mfcu -work xil_defaultlib tb_D_FLIPFLOP_func_synth.v 
 -- Skipping module D_FLIPFLOP
 -- Skipping module glbl
@@ -16,14 +16,14 @@ vlog -64 -incr -mfcu -work xil_defaultlib tb_D_FLIPFLOP_func_synth.v
 Top level modules:
 	D_FLIPFLOP
 	glbl
-End time: 00:28:52 on Jan 21,2024, Elapsed time: 0:00:00
+End time: 13:56:34 on Jan 21,2024, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-Start time: 00:28:52 on Jan 21,2024
+Start time: 13:56:34 on Jan 21,2024
 vlog -64 -incr -mfcu -sv -work xil_defaultlib ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv 
 -- Skipping module tb_D_FLIPFLOP
 
 Top level modules:
 	tb_D_FLIPFLOP
-End time: 00:28:52 on Jan 21,2024, Elapsed time: 0:00:00
+End time: 13:56:35 on Jan 21,2024, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0

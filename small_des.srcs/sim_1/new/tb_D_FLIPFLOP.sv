@@ -28,6 +28,8 @@ logic rst;
 logic q;
 
 D_FLIPFLOP DUT(clk, d, clear, rst, q);
+
+//initial q = 1'b0;
 initial clk = 1'b0;
 always begin
     #1 clk = ~clk;
@@ -35,10 +37,15 @@ end
 
 initial begin 
 #0
+rst = 1'b1;
+clear = 1'b1;
+d = 1'b0;
+#1
 rst = 1'b0;
 clear = 1'b1;
 d = 1'b0;
-#10
+#100
+
 #2
 rst = 1'b0;
 clear = 1'b1;

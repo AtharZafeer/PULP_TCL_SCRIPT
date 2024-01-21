@@ -14,7 +14,7 @@
 # //
 # do {tb_D_FLIPFLOP_simulate.do}
 # vsim -scasyncupdate -lib xil_defaultlib tb_D_FLIPFLOP_opt 
-# Start time: 00:26:21 on Jan 21,2024
+# Start time: 13:49:06 on Jan 21,2024
 # Loading sv_std.std
 # Loading work.tb_D_FLIPFLOP(fast)
 # Loading work.D_FLIPFLOP(fast)
@@ -24,8 +24,8 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv(82)
-#    Time: 28 ns  Iteration: 0  Instance: /tb_D_FLIPFLOP
-# Break at ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv line 82
-# End time: 00:27:08 on Jan 21,2024, Elapsed time: 0:00:47
+# ** Note: $stop    : ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv(89)
+#    Time: 119 ns  Iteration: 0  Instance: /tb_D_FLIPFLOP
+# Break at ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv line 89
+# End time: 13:51:05 on Jan 21,2024, Elapsed time: 0:01:59
 # Errors: 0, Warnings: 0

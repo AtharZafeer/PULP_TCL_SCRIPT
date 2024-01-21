@@ -4,6 +4,9 @@ z2
 Z0 !s99 nomlopt
 R0
 R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -13,8 +16,9 @@ R0
 cModel Technology
 Z1 d/home/azafeer/Desktop/test/small_des/small_des.sim/sim_1/behav/questa
 vD_FLIPFLOP
+!s10a 1705786780
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1705796775
+!s110 1705796775
 !i10b 1
 !s100 MW?dl28c?nl=i8iXFkXmz0
 I8;[XACE3dO0PgNK2Ke6jB3
@@ -25,20 +29,20 @@ w1705786780
 F../../../../small_des.srcs/sources_1/new/D_FLIPFLOP.sv
 !i122 5
 L0 23 8
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OL;L;2022.4;75
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2022.4;75
 r1
 !s85 0
 31
-Z6 !s108 1705796775.000000
-Z7 !s107 ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|../../../../small_des.srcs/sources_1/new/D_FLIPFLOP.sv|
-Z8 !s90 -64|-incr|-mfcu|-sv|-work|xil_defaultlib|../../../../small_des.srcs/sources_1/new/D_FLIPFLOP.sv|../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
+!s108 1705796775.000000
+Z5 !s107 ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|../../../../small_des.srcs/sources_1/new/D_FLIPFLOP.sv|
+Z6 !s90 -64|-incr|-mfcu|-sv|-work|xil_defaultlib|../../../../small_des.srcs/sources_1/new/D_FLIPFLOP.sv|../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
 !i113 0
-Z9 o-64 -mfcu -sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z10 tCvgOpt 0
+Z7 o-64 -mfcu -sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
 n@d_@f@l@i@p@f@l@o@p
 vglbl
-R3
+Z9 !s110 1705844939
 !i10b 1
 !s100 ZHmTNm_h3dd`6mIQLzSUN3
 IhdBVXCILC99TF;U<AK;MM2
@@ -46,53 +50,53 @@ R1
 w1697210495
 8glbl.v
 Fglbl.v
-!i122 6
+!i122 11
 L0 6 78
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+Z10 !s108 1705844939.000000
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 !i113 0
 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R10
+R8
 vtb_D_FLIPFLOP
 R2
-R3
+R9
 !i10b 1
-!s100 X7651OhZnG?c@9IRoEf0M2
-I@[^<QloD[faU3Hi:<Aj>k1
+!s100 jN_EldDQ?;:P8COoW=2jU0
+I:3nT1l^H8WdYTPf`[iAQk2
 S1
 R1
-w1705787485
+w1705844934
 8../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
 F../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
-!i122 5
-L0 23 63
+!i122 10
+L0 23 70
+R3
 R4
-R5
 r1
 !s85 0
 31
+R10
+R5
 R6
+!i113 0
 R7
 R8
-!i113 0
-R9
-R10
 ntb_@d_@f@l@i@p@f@l@o@p
 Ttb_D_FLIPFLOP_opt
-!s110 1705796776
-V1d_8Rm[N3D3^GX5IfFL]:1
+!s110 1705844941
+VYT;;i3zaK4Gc3Q`njRYzi0
 04 13 4 work tb_D_FLIPFLOP fast 0
 04 4 4 work glbl fast 0
 R0
 !s12b OEM100
 !s124 OEM100
 o-suppress 10016 +acc=npr -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib
-R10
+R8
 ntb_@d_@f@l@i@p@f@l@o@p_opt
 OL;O;2022.4;75
