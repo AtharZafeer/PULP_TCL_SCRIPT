@@ -1,0 +1,173 @@
+m255
+K4
+z2
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/azafeer/Desktop/test/small_des/small_des.sim/sim_1/synth/timing/questa
+vD_FLIPFLOP
+Z1 !s110 1705796840
+!i10b 1
+!s100 [gzK?1=P2HYocGk:[UPb01
+I=leSoGh_WbA=`_F[zX7mg2
+R0
+Z2 w1705796838
+Z3 8tb_D_FLIPFLOP_time_synth.v
+Z4 Ftb_D_FLIPFLOP_time_synth.v
+!i122 0
+L0 138 76
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2022.4;75
+r1
+!s85 0
+31
+Z7 !s108 1705796839.000000
+Z8 !s107 tb_D_FLIPFLOP_time_synth.v|
+Z9 !s90 -64|-incr|-mfcu|-work|xil_defaultlib|tb_D_FLIPFLOP_time_synth.v|
+!i113 0
+Z10 o-64 -mfcu -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+n@d_@f@l@i@p@f@l@o@p
+vglbl
+R1
+!i10b 1
+!s100 jzJi:fX]=l7Q6I3bT`bhg2
+IkiQgYa:e5L957:>oh<@HM1
+R0
+R2
+R3
+R4
+!i122 0
+L0 218 78
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vIBUF_HD118
+R1
+!i10b 1
+!s100 bmB4_TK`]`iPY:A`NSPII2
+I3AM0JGj?1[:FQN5JmC]5i3
+R0
+R2
+R3
+R4
+!i122 0
+L0 47 29
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@i@b@u@f_@h@d118
+vIBUF_HD119
+R1
+!i10b 1
+!s100 VeLGMBHlBSh<BI[mKFIiC1
+IT:7KO]8PQkG`b46Zloz>[2
+R0
+R2
+R3
+R4
+!i122 0
+L0 77 29
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@i@b@u@f_@h@d119
+vIBUF_HD120
+R1
+!i10b 1
+!s100 [ja^nR9j9WhGOKgG1EF?f2
+Ii8UPWUC@Lz64Gbl_OA=db1
+R0
+R2
+R3
+R4
+!i122 0
+L0 107 29
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@i@b@u@f_@h@d120
+vIBUF_UNIQ_BASE_
+R1
+!i10b 1
+!s100 bSGV9lC@TY@[:YBNJbJ^13
+I7]hFe3G8KfR]E1Qa15cha2
+R0
+R2
+R3
+R4
+!i122 0
+L0 17 29
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@i@b@u@f_@u@n@i@q_@b@a@s@e_
+vtb_D_FLIPFLOP
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 X7651OhZnG?c@9IRoEf0M2
+IKl;B]_DOHJWo]Jl4[KVdV0
+S1
+R0
+w1705787485
+8../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
+F../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
+!i122 1
+L0 23 63
+R5
+R6
+r1
+!s85 0
+31
+!s108 1705796840.000000
+!s107 ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
+!s90 -64|-incr|-mfcu|-sv|-work|xil_defaultlib|../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
+!i113 0
+o-64 -mfcu -sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R11
+ntb_@d_@f@l@i@p@f@l@o@p

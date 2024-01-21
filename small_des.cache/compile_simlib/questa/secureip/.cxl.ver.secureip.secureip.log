@@ -1,0 +1,67 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap secureip /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/secureip 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+Start time: 20:44:32 on Jan 20,2024
+vlog -64 -work secureip -f /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/secureip/.cxl.ver.secureip.secureip.cmf 
+-- Compiling module SIP_ISERDESE3
+-- Compiling module SIP_OSERDESE3_K2
+-- Compiling module SIP_RXTX_BITSLICE_K2
+-- Compiling module SIP_RX_BITSLICE_K2
+-- Compiling module SIP_TX_BITSLICE_K2
+-- Compiling module SIP_TX_BITSLICE_TRI_K2
+-- Compiling module SIP_BITSLICE_CONTROL_K2
+-- Compiling module SIP_ISERDESE3_D1
+-- Compiling module SIP_OSERDESE3_D1
+-- Compiling module SIP_RXTX_BITSLICE_D1
+-- Compiling module SIP_RX_BITSLICE_D1
+-- Compiling module SIP_TX_BITSLICE_D1
+-- Compiling module SIP_TX_BITSLICE_TRI_D1
+-- Compiling module SIP_BITSLICE_CONTROL_D1
+-- Compiling module SIP_CMACE4
+-- Compiling module SIP_GTHE4_CHANNEL
+-- Compiling module SIP_GTHE4_COMMON
+-- Compiling module SIP_GTYE4_CHANNEL
+-- Compiling module SIP_GTYE4_COMMON
+-- Compiling module SIP_ILKNE4
+-- Compiling module SIP_PCIE40E4
+
+Top level modules:
+	SIP_ISERDESE3
+	SIP_OSERDESE3_K2
+	SIP_RXTX_BITSLICE_K2
+	SIP_RX_BITSLICE_K2
+	SIP_TX_BITSLICE_K2
+	SIP_TX_BITSLICE_TRI_K2
+	SIP_BITSLICE_CONTROL_K2
+	SIP_ISERDESE3_D1
+	SIP_OSERDESE3_D1
+	SIP_RXTX_BITSLICE_D1
+	SIP_RX_BITSLICE_D1
+	SIP_TX_BITSLICE_D1
+	SIP_TX_BITSLICE_TRI_D1
+	SIP_BITSLICE_CONTROL_D1
+	SIP_CMACE4
+	SIP_GTHE4_CHANNEL
+	SIP_GTHE4_COMMON
+	SIP_GTYE4_CHANNEL
+	SIP_GTYE4_COMMON
+	SIP_ILKNE4
+	SIP_PCIE40E4
+End time: 20:45:02 on Jan 20,2024, Elapsed time: 0:00:30
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+Start time: 20:45:02 on Jan 20,2024
+vlog -64 -sv -svinputport=relaxed -suppress vlog-2583 -work secureip -f /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/secureip/.cxl.sv.secureip.secureip.cmf 
+-- Compiling module SIP_FE
+-- Compiling module SIP_HSDAC
+-- Compiling module SIP_HSADC
+-- Compiling module SIP_PCIE4CE4
+
+Top level modules:
+	SIP_FE
+	SIP_HSDAC
+	SIP_HSADC
+	SIP_PCIE4CE4
+End time: 20:45:17 on Jan 20,2024, Elapsed time: 0:00:15
+Errors: 0, Warnings: 0, Suppressed Warnings: 142

@@ -1,0 +1,42 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap unimacro /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unimacro 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2022.4 Compiler 2022.10 Oct 18 2022
+Start time: 20:45:33 on Jan 20,2024
+vcom -93 -64 -work unimacro -f /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unimacro/.cxl.vhd.unimacro.unimacro.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package VCOMPONENTS
+-- Compiling package body VCOMPONENTS
+-- Loading package VCOMPONENTS
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ADDMACC_MACRO
+-- Compiling architecture addmacc of ADDMACC_MACRO
+-- Compiling entity ADDSUB_MACRO
+-- Compiling architecture addsub of ADDSUB_MACRO
+-- Compiling entity BRAM_SDP_MACRO
+-- Compiling architecture bram_V of BRAM_SDP_MACRO
+-- Compiling entity BRAM_SINGLE_MACRO
+-- Compiling architecture bram_V of BRAM_SINGLE_MACRO
+-- Compiling entity BRAM_TDP_MACRO
+-- Compiling architecture bram_V of BRAM_TDP_MACRO
+-- Compiling entity COUNTER_LOAD_MACRO
+-- Compiling architecture counter of COUNTER_LOAD_MACRO
+-- Compiling entity COUNTER_TC_MACRO
+-- Compiling architecture count of COUNTER_TC_MACRO
+-- Compiling entity EQ_COMPARE_MACRO
+-- Compiling architecture compare of EQ_COMPARE_MACRO
+-- Loading package VCOMPONENTS
+-- Compiling entity FIFO_DUALCLOCK_MACRO
+-- Compiling architecture fifo_V of FIFO_DUALCLOCK_MACRO
+-- Compiling entity FIFO_SYNC_MACRO
+-- Compiling architecture fifo_V of FIFO_SYNC_MACRO
+-- Compiling entity MACC_MACRO
+-- Compiling architecture macc of MACC_MACRO
+-- Compiling entity MULT_MACRO
+-- Compiling architecture mult of MULT_MACRO
+End time: 20:45:35 on Jan 20,2024, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0

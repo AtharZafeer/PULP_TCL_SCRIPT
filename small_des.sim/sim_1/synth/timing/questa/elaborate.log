@@ -1,0 +1,146 @@
+QuestaSim-64 vopt 2022.4 Compiler 2022.10 Oct 18 2022
+** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+Start time: 00:27:21 on Jan 21,2024
+vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L simprims_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_D_FLIPFLOP xil_defaultlib.glbl -o tb_D_FLIPFLOP_opt 
+
+Top level modules:
+	tb_D_FLIPFLOP
+	glbl
+
+Analyzing design...
+-- Loading module tb_D_FLIPFLOP
+-- Loading module glbl
+-- Loading module D_FLIPFLOP
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+-- Loading module IBUF_UNIQ_BASE_
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+-- Loading module IBUF_HD118
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+-- Loading module IBUF_HD119
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+-- Loading module IBUF_HD120
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Error (suppressible): (vopt-19) Failed to access library 'simprims_ver' at "simprims_ver".
+No such file or directory. (errno = ENOENT)
+** Warning: tb_D_FLIPFLOP_time_synth.v(1): (vopt-2669) Unable to find library 'simprims_ver'.
+** Error: tb_D_FLIPFLOP_time_synth.v(33): Module 'IBUFCTRL' is not defined.
+ For instance 'IBUFCTRL_INST' at path 'tb_D_FLIPFLOP.DUT.clear_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(39): Module 'INBUF' is not defined.
+ For instance 'INBUF_INST' at path 'tb_D_FLIPFLOP.DUT.clear_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(63): Module 'IBUFCTRL' is not defined.
+ For instance 'IBUFCTRL_INST' at path 'tb_D_FLIPFLOP.DUT.clk_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(69): Module 'INBUF' is not defined.
+ For instance 'INBUF_INST' at path 'tb_D_FLIPFLOP.DUT.clk_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(93): Module 'IBUFCTRL' is not defined.
+ For instance 'IBUFCTRL_INST' at path 'tb_D_FLIPFLOP.DUT.d_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(99): Module 'INBUF' is not defined.
+ For instance 'INBUF_INST' at path 'tb_D_FLIPFLOP.DUT.d_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(123): Module 'IBUFCTRL' is not defined.
+ For instance 'IBUFCTRL_INST' at path 'tb_D_FLIPFLOP.DUT.rst_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(129): Module 'INBUF' is not defined.
+ For instance 'INBUF_INST' at path 'tb_D_FLIPFLOP.DUT.rst_IBUF_inst'
+** Error: tb_D_FLIPFLOP_time_synth.v(163): Module 'PULLDOWN' is not defined.
+ For instance 'pulldown_q' at path 'tb_D_FLIPFLOP.DUT'
+** Error: tb_D_FLIPFLOP_time_synth.v(178): Module 'BUFGCE' is not defined.
+ For instance 'clk_IBUF_BUFG_inst' at path 'tb_D_FLIPFLOP.DUT'
+** Error: tb_D_FLIPFLOP_time_synth.v(188): Module 'OBUF' is not defined.
+ For instance 'q_OBUF_inst' at path 'tb_D_FLIPFLOP.DUT'
+** Error: tb_D_FLIPFLOP_time_synth.v(193): Module 'LUT2' is not defined.
+ For instance 'q_i_1' at path 'tb_D_FLIPFLOP.DUT'
+** Error: tb_D_FLIPFLOP_time_synth.v(199): Module 'LUT1' is not defined.
+ For instance 'q_i_2' at path 'tb_D_FLIPFLOP.DUT'
+** Error: tb_D_FLIPFLOP_time_synth.v(204): Module 'FDCE' is not defined.
+ For instance 'q_reg' at path 'tb_D_FLIPFLOP.DUT'
+Optimization failed
+End time: 00:27:21 on Jan 21,2024, Elapsed time: 0:00:00
+Errors: 56, Warnings: 15

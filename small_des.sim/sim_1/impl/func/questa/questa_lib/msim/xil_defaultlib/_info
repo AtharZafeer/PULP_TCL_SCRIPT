@@ -1,0 +1,94 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/azafeer/Desktop/test/small_des/small_des.sim/sim_1/impl/func/questa
+vD_FLIPFLOP
+Z2 !s110 1705789854
+!i10b 1
+!s100 ;7<YoC3Mo6HiC@Akef?8k1
+IGfLgGZOmImdH<]2kQjE[n3
+R1
+Z3 w1705789853
+Z4 8tb_D_FLIPFLOP_func_impl.v
+Z5 Ftb_D_FLIPFLOP_func_impl.v
+!i122 0
+L0 20 69
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2022.4;75
+r1
+!s85 0
+31
+Z8 !s108 1705789854.000000
+Z9 !s107 tb_D_FLIPFLOP_func_impl.v|
+Z10 !s90 -64|-incr|-mfcu|-work|xil_defaultlib|tb_D_FLIPFLOP_func_impl.v|
+!i113 0
+Z11 o-64 -mfcu -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0
+n@d_@f@l@i@p@f@l@o@p
+vglbl
+R2
+!i10b 1
+!s100 Soh2IM3oN6<EFFOL]6cXl1
+I<ibPa_W>1m@2@ln=Z[OAC0
+R1
+R3
+R4
+R5
+!i122 0
+L0 93 78
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+vtb_D_FLIPFLOP
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R2
+!i10b 1
+!s100 X7651OhZnG?c@9IRoEf0M2
+IKl;B]_DOHJWo]Jl4[KVdV0
+S1
+R1
+w1705787485
+8../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
+F../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv
+!i122 1
+L0 23 63
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
+!s90 -64|-incr|-mfcu|-sv|-work|xil_defaultlib|../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv|
+!i113 0
+o-64 -mfcu -sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R12
+ntb_@d_@f@l@i@p@f@l@o@p
+Ttb_D_FLIPFLOP_opt
+!s110 1705789855
+VS_bg919IXzFzjZJ?LXJ6k2
+04 13 4 work tb_D_FLIPFLOP fast 0
+04 4 4 work glbl fast 0
+R0
+!s12b OEM100
+!s124 OEM100
+o-suppress 10016 +acc=npr -L xil_defaultlib -L unisims_ver -L secureip -work xil_defaultlib
+R12
+ntb_@d_@f@l@i@p@f@l@o@p_opt
+OL;O;2022.4;75

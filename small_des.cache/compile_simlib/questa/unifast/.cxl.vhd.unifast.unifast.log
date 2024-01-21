@@ -1,0 +1,22 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap unifast /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unifast 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2022.4 Compiler 2022.10 Oct 18 2022
+Start time: 20:45:36 on Jan 20,2024
+vcom -93 -64 -work unifast -f /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unifast/.cxl.vhd.unifast.unifast.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading package VPKG
+-- Compiling entity DSP48E1
+-- Compiling architecture DSP48E1_V of DSP48E1
+-- Compiling entity MMCME2_ADV
+-- Compiling architecture MMCME2_ADV_V of MMCME2_ADV
+-- Compiling entity PLLE2_ADV
+-- Compiling architecture PLLE2_ADV_V of PLLE2_ADV
+End time: 20:45:39 on Jan 20,2024, Elapsed time: 0:00:03
+Errors: 0, Warnings: 0

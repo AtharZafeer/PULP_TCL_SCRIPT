@@ -1,0 +1,31 @@
+# //  Questa Sim-64
+# //  Version 2022.4 linux_x86_64 Oct 18 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_D_FLIPFLOP_simulate.do}
+# vsim -scasyncupdate -lib xil_defaultlib tb_D_FLIPFLOP_opt 
+# Start time: 00:26:21 on Jan 21,2024
+# Loading sv_std.std
+# Loading work.tb_D_FLIPFLOP(fast)
+# Loading work.D_FLIPFLOP(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv(82)
+#    Time: 28 ns  Iteration: 0  Instance: /tb_D_FLIPFLOP
+# Break at ../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv line 82
+# End time: 00:27:08 on Jan 21,2024, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 0

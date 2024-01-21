@@ -1,0 +1,34 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap unimacro_ver /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unimacro_ver 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+Start time: 20:45:53 on Jan 20,2024
+vlog -64 -work unimacro_ver -f /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unimacro_ver/.cxl.ver.unimacro.unimacro_ver.cmf 
+-- Compiling module ADDMACC_MACRO
+-- Compiling module FIFO_DUALCLOCK_MACRO
+-- Compiling module FIFO_SYNC_MACRO
+-- Compiling module COUNTER_LOAD_MACRO
+-- Compiling module MULT_MACRO
+-- Compiling module COUNTER_TC_MACRO
+-- Compiling module EQ_COMPARE_MACRO
+-- Compiling module ADDSUB_MACRO
+-- Compiling module BRAM_SDP_MACRO
+-- Compiling module MACC_MACRO
+-- Compiling module BRAM_TDP_MACRO
+-- Compiling module BRAM_SINGLE_MACRO
+
+Top level modules:
+	ADDMACC_MACRO
+	FIFO_DUALCLOCK_MACRO
+	FIFO_SYNC_MACRO
+	COUNTER_LOAD_MACRO
+	MULT_MACRO
+	COUNTER_TC_MACRO
+	EQ_COMPARE_MACRO
+	ADDSUB_MACRO
+	BRAM_SDP_MACRO
+	MACC_MACRO
+	BRAM_TDP_MACRO
+	BRAM_SINGLE_MACRO
+End time: 20:45:53 on Jan 20,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

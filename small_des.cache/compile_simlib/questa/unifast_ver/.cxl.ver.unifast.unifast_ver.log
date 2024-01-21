@@ -1,0 +1,16 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap unifast_ver /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unifast_ver 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+Start time: 20:45:54 on Jan 20,2024
+vlog -64 -work unifast_ver -f /home/azafeer/Desktop/test/small_des/small_des.cache/compile_simlib/questa/unifast_ver/.cxl.ver.unifast.unifast_ver.cmf 
+-- Compiling module MMCME2_ADV
+-- Compiling module PLLE2_ADV
+-- Compiling module DSP48E1
+
+Top level modules:
+	MMCME2_ADV
+	PLLE2_ADV
+	DSP48E1
+End time: 20:45:54 on Jan 20,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
