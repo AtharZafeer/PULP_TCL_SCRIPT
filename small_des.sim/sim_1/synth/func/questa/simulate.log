@@ -14,7 +14,7 @@
 # //
 # do {tb_D_FLIPFLOP_simulate.do}
 # vsim -scasyncupdate -lib xil_defaultlib tb_D_FLIPFLOP_opt 
-# Start time: 13:56:41 on Jan 21,2024
+# Start time: 14:10:25 on Jan 21,2024
 # Loading sv_std.std
 # Loading work.tb_D_FLIPFLOP(fast)
 # Loading work.D_FLIPFLOP(fast)
@@ -26,7 +26,13 @@
 # Loading unisims_ver.LUT2(fast)
 # Loading unisims_ver.LUT1(fast)
 # Loading unisims_ver.FDCE(fast)
+# Loading unisims_ver.OR2L(fast)
+# Loading unisims_ver.AND2B1L(fast)
+# Loading unisims_ver.MUXF7(fast)
 # Loading work.glbl(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_D_FLIPFLOP/DUT File: ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv Line: 30
+# ** Warning: (vsim-3722) ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv(30): [TFMPC] - Missing connection for port 'made_up_gnd_port'.
 # 1
 # 1
 # .main_pane.wave.interior.cs.body.pw.wf
@@ -35,3 +41,8 @@
 # ** Note: $stop    : ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv(89)
 #    Time: 119 ns  Iteration: 0  Instance: /tb_D_FLIPFLOP
 # Break at ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv line 89
+add wave -position insertpoint sim:/tb_D_FLIPFLOP/DUT/q_reg_OR/*
+add wave -position insertpoint sim:/tb_D_FLIPFLOP/DUT/q_reg_and1/*
+add wave -position insertpoint sim:/tb_D_FLIPFLOP/DUT/q_reg_and2/*
+add wave -position insertpoint sim:/tb_D_FLIPFLOP/DUT/q_reg_mux/*
+# Causality operation skipped due to absence of debug database file

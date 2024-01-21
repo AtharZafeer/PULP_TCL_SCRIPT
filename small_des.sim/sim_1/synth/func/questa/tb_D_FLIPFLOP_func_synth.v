@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-// Date        : Sun Jan 21 13:56:33 2024
+// Date        : Sun Jan 21 14:10:17 2024
 // Host        : compute running 64-bit Ubuntu 22.04.1 LTS
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               /home/azafeer/Desktop/test/small_des/small_des.sim/sim_1/synth/func/questa/tb_D_FLIPFLOP_func_synth.v
@@ -19,12 +19,14 @@ module D_FLIPFLOP
     d,
     clear,
     rst,
-    q);
+    q,
+    made_up_gnd_port);
   input clk;
   input d;
   input clear;
   input rst;
   output q;
+  inout [0:1]made_up_gnd_port;
 
   wire clear;
   wire clear_IBUF;
@@ -37,10 +39,17 @@ module D_FLIPFLOP
   wire q_OBUF;
   wire q_i_1_n_0;
   wire q_i_2_n_0;
+  wire q_reg_and1or_net;
+  wire q_reg_and2or_net;
+  wire q_reg_mux_sel_net;
+  wire q_reg_muxo2d_net;
+  wire q_reg_or2mux_net;
   wire rst;
   wire rst_IBUF;
 PULLDOWN pulldown_q
        (.O(q));
+PULLDOWN pulldown_q_reg_mux_sel_net
+       (.O(q_reg_mux_sel_net));
 
   IBUF clear_IBUF_inst
        (.I(clear),
@@ -81,8 +90,25 @@ PULLDOWN pulldown_q
        (.C(clk_IBUF_BUFG),
         .CE(1'b1),
         .CLR(q_i_2_n_0),
-        .D(q_i_1_n_0),
+        .D(q_reg_muxo2d_net),
         .Q(q_OBUF));
+  OR2L q_reg_OR
+       (.DI(q_reg_and1or_net),
+        .O(q_reg_or2mux_net),
+        .SRI(q_reg_and2or_net));
+  AND2B1L q_reg_and1
+       (.DI(q_i_1_n_0),
+        .O(q_reg_and1or_net),
+        .SRI(made_up_gnd_port[0]));
+  AND2B1L q_reg_and2
+       (.DI(made_up_gnd_port[0]),
+        .O(q_reg_and2or_net),
+        .SRI(q_i_1_n_0));
+  MUXF7 q_reg_mux
+       (.I0(q_i_1_n_0),
+        .I1(q_reg_or2mux_net),
+        .O(q_reg_muxo2d_net),
+        .S(made_up_gnd_port[0]));
   IBUF rst_IBUF_inst
        (.I(rst),
         .O(rst_IBUF));
