@@ -1,8 +1,9 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
+verilog xil_defaultlib  --include "../../../../../small_des.gen/sources_1/bd/const_ip/hdl" \
 "tb_D_FLIPFLOP_func_synth.v" \
+"../../../../../small_des.gen/sources_1/bd/const_ip/hdl/const_ip_wrapper.v" \
 
-sv xil_defaultlib  \
+sv xil_defaultlib "/home/azafeer/Desktop/test/small_des/small_des.gen/sources_1/bd/const_ip/hdl/const_ip_wrapper.v" --include "../../../../../small_des.gen/sources_1/bd/const_ip/hdl" \
 "../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv" \
 
 # Do not sort compile order

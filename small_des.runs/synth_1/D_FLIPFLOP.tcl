@@ -70,15 +70,11 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param simulator.questaInstallPath /cad/mentor/questasim_2019.4/questasim/bin
 set_param power.enableCarry8RouteBelPower 1
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param chipscope.maxJobs 12
 set_param power.BramSDPPropagationFix 1
 set_param power.enableUnconnectedCarry8PinPower 1
 set_param power.enableLutRouteBelPower 1
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu9eg-ffvb1156-2-e
 
@@ -95,6 +91,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv /home/azafeer/Desktop/test/small_des/small_des.srcs/sources_1/new/D_FLIPFLOP.sv
+read_verilog -library xil_defaultlib /home/azafeer/Desktop/test/small_des/small_des.gen/sources_1/bd/const_ip/hdl/const_ip_wrapper.v
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

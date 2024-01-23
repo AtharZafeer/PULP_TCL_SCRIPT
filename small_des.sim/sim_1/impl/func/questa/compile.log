@@ -1,23 +1,96 @@
-QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+QuestaSim-64 vmap 2019.4 Lib Mapping Utility 2019.10 Oct 15 2019
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
 Modifying modelsim.ini
-QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-Start time: 22:30:54 on Jan 20,2024
-vlog -64 -incr -mfcu -work xil_defaultlib tb_D_FLIPFLOP_func_impl.v 
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+Start time: 19:05:05 on Jan 22,2024
+vlog -64 -incr -mfcu -work xil_defaultlib tb_D_FLIPFLOP_func_impl.v ../../../../../small_des.gen/sources_1/bd/const_ip/hdl/const_ip_wrapper.v 
+-- Compiling module dbg_hub
+-- Compiling module dbg_hub_clk_x_pntrs
+-- Compiling module dbg_hub_clk_x_pntrs_7
+-- Compiling module dbg_hub_dmem
+-- Compiling module dbg_hub_dmem_13
+-- Compiling module dbg_hub_fifo_generator_ramfifo
+-- Compiling module dbg_hub_fifo_generator_ramfifo__parameterized0
+-- Compiling module dbg_hub_fifo_generator_top
+-- Compiling module dbg_hub_fifo_generator_top__parameterized0
+-- Compiling module dbg_hub_fifo_generator_v13_1_5
+-- Compiling module dbg_hub_fifo_generator_v13_1_5__parameterized0
+-- Compiling module dbg_hub_fifo_generator_v13_1_5_synth
+-- Compiling module dbg_hub_fifo_generator_v13_1_5_synth__parameterized0
+-- Compiling module dbg_hub_ltlib_v1_0_1_bscan
+-- Compiling module dbg_hub_ltlib_v1_0_1_generic_mux
+-- Compiling module dbg_hub_memory
+-- Compiling module dbg_hub_memory__parameterized0
+-- Compiling module dbg_hub_rd_bin_cntr
+-- Compiling module dbg_hub_rd_bin_cntr_18
+-- Compiling module dbg_hub_rd_fwft
+-- Compiling module dbg_hub_rd_handshaking_flags
+-- Compiling module dbg_hub_rd_handshaking_flags__parameterized0
+-- Compiling module dbg_hub_rd_logic
+-- Compiling module dbg_hub_rd_logic__parameterized0
+-- Compiling module dbg_hub_rd_status_flags_as
+-- Compiling module dbg_hub_rd_status_flags_as_17
+-- Compiling module dbg_hub_reset_blk_ramfifo
+-- Compiling module dbg_hub_reset_blk_ramfifo_8
+-- Compiling module dbg_hub_synchronizer_ff
+-- Compiling module dbg_hub_synchronizer_ff_1
+-- Compiling module dbg_hub_synchronizer_ff_10
+-- Compiling module dbg_hub_synchronizer_ff_11
+-- Compiling module dbg_hub_synchronizer_ff_12
+-- Compiling module dbg_hub_synchronizer_ff_2
+-- Compiling module dbg_hub_synchronizer_ff_3
+-- Compiling module dbg_hub_synchronizer_ff_9
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0_19
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0_20
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0_21
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0_22
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0_4
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0_5
+-- Compiling module dbg_hub_synchronizer_ff__parameterized0_6
+-- Compiling module dbg_hub_wr_bin_cntr
+-- Compiling module dbg_hub_wr_bin_cntr_16
+-- Compiling module dbg_hub_wr_handshaking_flags
+-- Compiling module dbg_hub_wr_handshaking_flags_15
+-- Compiling module dbg_hub_wr_logic
+-- Compiling module dbg_hub_wr_logic__parameterized0
+-- Compiling module dbg_hub_wr_status_flags_as
+-- Compiling module dbg_hub_wr_status_flags_as_14
+-- Compiling module dbg_hub_xsdbm_v3_0_0_addr_ctl
+-- Compiling module dbg_hub_xsdbm_v3_0_0_bscan_switch
+-- Compiling module dbg_hub_xsdbm_v3_0_0_burst_wdlen_ctl
+-- Compiling module dbg_hub_xsdbm_v3_0_0_bus_ctl
+-- Compiling module dbg_hub_xsdbm_v3_0_0_bus_ctl_cnt
+-- Compiling module dbg_hub_xsdbm_v3_0_0_bus_ctl_flg
+-- Compiling module dbg_hub_xsdbm_v3_0_0_bus_ctl_flg__parameterized0
+-- Compiling module dbg_hub_xsdbm_v3_0_0_bus_mstr2sl_if
+-- Compiling module dbg_hub_xsdbm_v3_0_0_cmd_decode
+-- Compiling module dbg_hub_xsdbm_v3_0_0_ctl_reg
+-- Compiling module dbg_hub_xsdbm_v3_0_0_ctl_reg__parameterized0
+-- Compiling module dbg_hub_xsdbm_v3_0_0_ctl_reg__parameterized1
+-- Compiling module dbg_hub_xsdbm_v3_0_0_ctl_reg__parameterized2
+-- Compiling module dbg_hub_xsdbm_v3_0_0_icon
+-- Compiling module dbg_hub_xsdbm_v3_0_0_icon2xsdb
+-- Compiling module dbg_hub_xsdbm_v3_0_0_if
+-- Compiling module dbg_hub_xsdbm_v3_0_0_if_static_status
+-- Compiling module dbg_hub_xsdbm_v3_0_0_rdfifo
+-- Compiling module dbg_hub_xsdbm_v3_0_0_rdreg
+-- Compiling module dbg_hub_xsdbm_v3_0_0_stat
+-- Compiling module dbg_hub_xsdbm_v3_0_0_stat_reg
+-- Compiling module dbg_hub_xsdbm_v3_0_0_stat_reg__parameterized0
+-- Compiling module dbg_hub_xsdbm_v3_0_0_stat_reg__parameterized0_0
+-- Compiling module dbg_hub_xsdbm_v3_0_0_sync
+-- Compiling module dbg_hub_xsdbm_v3_0_0_wrfifo
+-- Compiling module dbg_hub_xsdbm_v3_0_0_wrreg
+-- Compiling module dbg_hub_xsdbm_v3_0_0_xsdbm
+-- Compiling module dbg_hub_xsdbm_v3_0_0_xsdbm_id
+-- Compiling module u_ila_0
+-- Compiling module u_ila_0_ila_v6_2_14_ila
 -- Compiling module D_FLIPFLOP
--- Compiling module glbl
+** Error: (vlog-13069) tb_D_FLIPFLOP_func_impl.v(41820): syntax error in protected region.
 
-Top level modules:
-	D_FLIPFLOP
-	glbl
-End time: 22:30:54 on Jan 20,2024, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0
-QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-Start time: 22:30:54 on Jan 20,2024
-vlog -64 -incr -mfcu -sv -work xil_defaultlib ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv 
--- Compiling module tb_D_FLIPFLOP
+** Error: tb_D_FLIPFLOP_func_impl.v(41820): (vlog-13205) Syntax error found in the scope following '<protected>'. Is there a missing '::'?
+** Error: (vlog-13069) tb_D_FLIPFLOP_func_impl.v(41820): syntax error in protected region.
 
-Top level modules:
-	tb_D_FLIPFLOP
-End time: 22:30:54 on Jan 20,2024, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0
+End time: 19:05:06 on Jan 22,2024, Elapsed time: 0:00:01
+Errors: 3, Warnings: 0

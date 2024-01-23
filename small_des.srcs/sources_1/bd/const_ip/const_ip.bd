@@ -1,0 +1,45 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xczu9eg-ffvb1156-2-e",
+      "gen_directory": "../../../../small_des.gen/sources_1/bd/const_ip",
+      "name": "const_ip",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "dout_0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "const_ip_xlconstant_0_0",
+        "xci_path": "ip/const_ip_xlconstant_0_0/const_ip_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "dout_0"
+        ]
+      }
+    }
+  }
+}

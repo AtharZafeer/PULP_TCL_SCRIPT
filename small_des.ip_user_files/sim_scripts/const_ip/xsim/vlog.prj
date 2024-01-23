@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../bd/const_ip/ip/const_ip_xlconstant_0_0/sim/const_ip_xlconstant_0_0.v" \
+"../../../bd/const_ip/sim/const_ip.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

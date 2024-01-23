@@ -13,4 +13,21 @@ create_clock -period 10.000 -name clk -waveform {0.000 4.000} [get_ports clk]
 set_input_delay -clock [get_clocks *] 5.000 [get_ports {clear d rst}]
 set_output_delay -clock [get_clocks *] 4.000 [get_ports -filter { NAME =~  "*" && DIRECTION == "OUT" }]
 
+set_logic_one [get_ports {made_up_gnd_port[0]}]
+set_logic_zero [get_ports {made_up_gnd_port[0]}]
+set_logic_zero [get_ports {made_up_gnd_port[0]}]
+set_logic_zero [get_ports {made_up_gnd_port[0]}]
+set_logic_zero [get_ports {made_up_gnd_port[1]}]
+
 set_property PULLTYPE PULLDOWN [get_ports {made_up_gnd_port[0]}]
+connect_debug_port u_ila_0/probe0 [get_nets [list q_reg_muxo2d_net]]
+connect_debug_port u_ila_0/probe1 [get_nets [list q_reg_or2mux_net]]
+connect_debug_port u_ila_0/probe2 [get_nets [list q_reg_and1or_net]]
+connect_debug_port u_ila_0/probe3 [get_nets [list q_reg_and2or_net]]
+connect_debug_port u_ila_0/probe4 [get_nets [list q_reg_mux_sel_net]]
+
+set_property PULLTYPE PULLDOWN [get_ports {made_up_gnd_port[0]}]
+
+set_property PULLTYPE PULLUP [get_ports {made_up_gnd_port[0]}]
+set_property MARK_DEBUG true [get_nets q_i_1_n_0]
+set_property MARK_DEBUG true [get_nets q_reg_mux_sel_net]

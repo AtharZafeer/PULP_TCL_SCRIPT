@@ -1,29 +1,32 @@
 ** Warning: (vlib-34) Library already exists at "questa_lib/work".
-Errors: 0, Warnings: 1
 ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
-Errors: 0, Warnings: 1
 ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
-Errors: 0, Warnings: 1
-QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+QuestaSim-64 vmap 2019.4 Lib Mapping Utility 2019.10 Oct 15 2019
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
 Modifying modelsim.ini
-QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-Start time: 14:10:18 on Jan 21,2024
-vlog -64 -incr -mfcu -work xil_defaultlib tb_D_FLIPFLOP_func_synth.v 
--- Compiling module D_FLIPFLOP
--- Compiling module glbl
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+Start time: 19:58:20 on Jan 22,2024
+vlog -64 -incr -mfcu -work xil_defaultlib tb_D_FLIPFLOP_func_synth.v ../../../../../small_des.gen/sources_1/bd/const_ip/hdl/const_ip_wrapper.v 
+-- Skipping module dbg_hub_CV
+-- Skipping module u_ila_0_CV
+-- Skipping module D_FLIPFLOP
+-- Skipping module glbl
+-- Compiling module const_ip_wrapper
 
 Top level modules:
 	D_FLIPFLOP
 	glbl
-End time: 14:10:18 on Jan 21,2024, Elapsed time: 0:00:00
+	const_ip_wrapper
+End time: 19:58:21 on Jan 22,2024, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0
-QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-Start time: 14:10:18 on Jan 21,2024
-vlog -64 -incr -mfcu -sv -work xil_defaultlib ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv 
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+Start time: 19:58:21 on Jan 22,2024
+vlog -64 -incr -mfcu -sv -work xil_defaultlib /home/azafeer/Desktop/test/small_des/small_des.gen/sources_1/bd/const_ip/hdl/const_ip_wrapper.v ../../../../../small_des.srcs/sim_1/new/tb_D_FLIPFLOP.sv 
+-- Compiling module const_ip_wrapper
 -- Skipping module tb_D_FLIPFLOP
 
 Top level modules:
+	const_ip_wrapper
 	tb_D_FLIPFLOP
-End time: 14:10:19 on Jan 21,2024, Elapsed time: 0:00:01
+End time: 19:58:21 on Jan 22,2024, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0

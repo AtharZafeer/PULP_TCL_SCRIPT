@@ -1,0 +1,3 @@
+const_ip_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/const_ip/ip/const_ip_xlconstant_0_0/sim/const_ip_xlconstant_0_0.v,
+const_ip.v,verilog,xil_defaultlib,../../../bd/const_ip/sim/const_ip.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
