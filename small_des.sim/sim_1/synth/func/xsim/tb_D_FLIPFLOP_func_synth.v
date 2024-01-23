@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-// Date        : Tue Jan 23 12:41:03 2024
+// Date        : Tue Jan 23 20:22:37 2024
 // Host        : compute running 64-bit Ubuntu 22.04.1 LTS
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               /home/azafeer/Desktop/test/small_des/small_des.sim/sim_1/synth/func/xsim/tb_D_FLIPFLOP_func_synth.v
@@ -12,6 +12,42 @@
 // Device      : xczu9eg-ffvb1156-2-e
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
+
+module dbg_hub_CV
+   (clk,
+    sl_iport0_o,
+    sl_oport0_i);
+  input clk;
+  output [36:0]sl_iport0_o;
+  input [16:0]sl_oport0_i;
+
+
+endmodule
+
+module u_ila_0_CV
+   (clk,
+    probe0,
+    SL_IPORT_I,
+    SL_OPORT_O,
+    probe1,
+    probe2,
+    probe3,
+    probe4,
+    probe5,
+    probe6);
+  input clk;
+  input [0:0]probe0;
+  input [36:0]SL_IPORT_I;
+  output [16:0]SL_OPORT_O;
+  input [0:0]probe1;
+  input [0:0]probe2;
+  input [0:0]probe3;
+  input [0:0]probe4;
+  input [0:0]probe5;
+  input [0:0]probe6;
+
+
+endmodule
 
 (* NotValidForBitStream *)
 module D_FLIPFLOP
@@ -46,9 +82,13 @@ module D_FLIPFLOP
   wire q_reg_or2mux_net;
   wire rst;
   wire rst_IBUF;
+  wire [36:0]sl_iport0_o_0;
+  wire [16:0]sl_oport0_i_0;
 PULLDOWN pulldown_q
        (.O(q));
-PULLUP pullup_q_reg_mux_sel_net
+PULLDOWN pulldown_made_up_gnd_port_1
+       (.O(made_up_gnd_port[1]));
+PULLDOWN pulldown_q_reg_mux_sel_net
        (.O(q_reg_mux_sel_net));
 
   IBUF clear_IBUF_inst
@@ -70,6 +110,13 @@ PULLUP pullup_q_reg_mux_sel_net
   IBUF d_IBUF_inst
        (.I(d),
         .O(d_IBUF));
+  (* DEBUG_CORE_INFO = "dbg_hub,labtools_xsdbm_v3_00_a,{C_BSCAN_MODE=false,C_BSCAN_MODE_WITH_CORE=false,C_CLK_INPUT_FREQ_HZ=300000000,C_ENABLE_CLK_DIVIDER=false,C_EN_BSCANID_VEC=false,C_NUM_BSCAN_MASTER_PORTS=0,C_TWO_PRIM_MODE=false,C_USER_SCAN_CHAIN=1,C_USE_EXT_BSCAN=false,C_XSDB_NUM_SLAVES=1,component_name=dbg_hub_CV}" *) 
+  (* DEBUG_PORT_clk = "" *) 
+  (* IS_DEBUG_CORE *) 
+  dbg_hub_CV dbg_hub
+       (.clk(clk_IBUF_BUFG),
+        .sl_iport0_o(sl_iport0_o_0),
+        .sl_oport0_i(sl_oport0_i_0));
   OBUF q_OBUF_inst
        (.I(q_OBUF),
         .O(q));
@@ -96,11 +143,15 @@ PULLUP pullup_q_reg_mux_sel_net
        (.DI(q_reg_and1or_net),
         .O(q_reg_or2mux_net),
         .SRI(q_reg_and2or_net));
-  AND2B1L q_reg_and1
+  AND2B1L #(
+    .IS_SRI_INVERTED(1'b1)) 
+    q_reg_and1
        (.DI(q_i_1_n_0),
         .O(q_reg_and1or_net),
         .SRI(made_up_gnd_port[0]));
-  AND2B1L q_reg_and2
+  AND2B1L #(
+    .IS_SRI_INVERTED(1'b1)) 
+    q_reg_and2
        (.DI(made_up_gnd_port[0]),
         .O(q_reg_and2or_net),
         .SRI(q_i_1_n_0));
@@ -112,6 +163,27 @@ PULLUP pullup_q_reg_mux_sel_net
   IBUF rst_IBUF_inst
        (.I(rst),
         .O(rst_IBUF));
+  (* DEBUG_CORE_INFO = "u_ila_0,labtools_ila_v6_00_a,{ALL_PROBE_SAME_MU=true,ALL_PROBE_SAME_MU_CNT=2,C_ADV_TRIGGER=false,C_DATA_DEPTH=1024,C_EN_STRG_QUAL=true,C_INPUT_PIPE_STAGES=0,C_NUM_OF_PROBES=7,C_PROBE0_TYPE=0,C_PROBE0_WIDTH=1,C_PROBE1_TYPE=0,C_PROBE1_WIDTH=1,C_PROBE2_TYPE=0,C_PROBE2_WIDTH=1,C_PROBE3_TYPE=0,C_PROBE3_WIDTH=1,C_PROBE4_TYPE=0,C_PROBE4_WIDTH=1,C_PROBE5_TYPE=0,C_PROBE5_WIDTH=1,C_PROBE6_TYPE=0,C_PROBE6_WIDTH=1,C_TRIGIN_EN=0,C_TRIGOUT_EN=0,component_name=u_ila_0_CV}" *) 
+  (* DEBUG_PORT_clk = "n:clk_IBUF_BUFG" *) 
+  (* DEBUG_PORT_probe0 = "n:clk_IBUF_BUFG" *) 
+  (* DEBUG_PORT_probe1 = "n:q_i_1_n_0" *) 
+  (* DEBUG_PORT_probe2 = "n:q_reg_mux_sel_net" *) 
+  (* DEBUG_PORT_probe3 = "n:q_reg_and1or_net" *) 
+  (* DEBUG_PORT_probe4 = "n:q_reg_and2or_net" *) 
+  (* DEBUG_PORT_probe5 = "n:q_reg_muxo2d_net" *) 
+  (* DEBUG_PORT_probe6 = "n:q_reg_or2mux_net" *) 
+  (* IS_DEBUG_CORE *) 
+  u_ila_0_CV u_ila_0
+       (.SL_IPORT_I(sl_iport0_o_0),
+        .SL_OPORT_O(sl_oport0_i_0),
+        .clk(clk_IBUF_BUFG),
+        .probe0(clk_IBUF_BUFG),
+        .probe1(q_i_1_n_0),
+        .probe2(made_up_gnd_port[0]),
+        .probe3(q_reg_and1or_net),
+        .probe4(q_reg_and2or_net),
+        .probe5(q_reg_muxo2d_net),
+        .probe6(q_reg_or2mux_net));
 endmodule
 `ifndef GLBL
 `define GLBL
