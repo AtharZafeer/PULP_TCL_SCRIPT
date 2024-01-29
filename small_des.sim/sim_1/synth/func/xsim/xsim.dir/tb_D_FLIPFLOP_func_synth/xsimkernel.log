@@ -1,4 +1,4 @@
-Running: xsim.dir/tb_D_FLIPFLOP_func_synth/xsimk -simmode gui -wdb tb_D_FLIPFLOP_func_synth.wdb -simrunnum 0 -socket 60681
+Running: xsim.dir/tb_D_FLIPFLOP_func_synth/xsimk -simmode gui -wdb tb_D_FLIPFLOP_func_synth.wdb -simrunnum 0 -socket 57921
 Design successfully loaded
-Design Loading Memory Usage: 23608 KB (Peak: 24180 KB)
-Design Loading CPU Usage: 150 ms
+Design Loading Memory Usage: 23604 KB (Peak: 24180 KB)
+Design Loading CPU Usage: 180 ms

@@ -22,7 +22,7 @@
 
 module D_FLIPFLOP(input logic clk, input logic d, input logic clear, input logic rst, output logic q);
     
-    always_ff@(posedge clk, negedge rst )begin
+    always_ff@(posedge clk or negedge rst )begin
         if(~rst) q<=0;
         else if(clear) q<=0;
         else q<=d;

@@ -48,7 +48,7 @@ d = 1'b0;
 
 #2
 rst = 1'b0;
-clear = 1'b1;
+clear = 1'b0;
 d = 1'b1;
 #2
 rst = 1'b1;
@@ -79,7 +79,7 @@ clear = 1'b0;
 d = 1'b1; 
 #2
 rst = 1'b1;
-clear = 1'b0;
+clear = 1'b1;
 d = 1'b0;
 #2
 rst = 1'b1;

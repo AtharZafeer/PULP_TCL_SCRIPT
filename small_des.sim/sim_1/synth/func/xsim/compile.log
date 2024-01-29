@@ -1,6 +1,4 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/azafeer/Desktop/test/small_des/small_des.sim/sim_1/synth/func/xsim/tb_D_FLIPFLOP_func_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module dbg_hub_CV
-INFO: [VRFC 10-311] analyzing module u_ila_0_CV
 INFO: [VRFC 10-311] analyzing module D_FLIPFLOP
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/azafeer/Desktop/test/small_des/small_des.gen/sources_1/bd/const_ip/hdl/const_ip_wrapper.v" into library xil_defaultlib
