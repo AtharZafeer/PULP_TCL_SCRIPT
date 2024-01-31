@@ -42,10 +42,10 @@ for {set x 0} {$x< $reg_count} {incr x} { connect_net -net [get_nets [lindex $re
 for {set x 0} {$x< $reg_count} {incr x} { set_property IS_INVERTED 1 [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~R}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~D}] }
 
 #create a port
-for {set x 0} {$x< $reg_count} {incr x} { create_port -direction OUT  -from 0 -to $reg_count made_up_gnd_port }
+create_port -direction OUT  -from 0 -to $reg_count made_up_gnd_port
 
 #connect the port to mux_sel net
-for {set x 0} {$x< $reg_count} {incr x} { connect_net -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_ports made_up_gnd_port[$x]]] }
+for {set x 0} {$x< $reg_count} {incr x} { connect_net -net [get_nets -hierarchical [lindex $reg_list $x]_mux_sel] -objects [list [get_ports made_up_gnd_port[$x]]] }
 
 #pulldown the gnd port temperarily
 for {set x 0} {$x< $reg_count} {incr x} { set_property PULLDOWN TRUE [get_ports made_up_gnd_port[$x]] }
