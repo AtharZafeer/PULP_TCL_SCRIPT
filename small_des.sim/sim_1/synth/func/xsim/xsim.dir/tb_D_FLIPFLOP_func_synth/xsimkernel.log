@@ -2,3 +2,6 @@ Running: xsim.dir/tb_D_FLIPFLOP_func_synth/xsimk -simmode gui -wdb tb_D_FLIPFLOP
 Design successfully loaded
 Design Loading Memory Usage: 23604 KB (Peak: 24180 KB)
 Design Loading CPU Usage: 180 ms
+Simulation completed
+Simulation Memory Usage: 105860 KB (Peak: 162872 KB)
+Simulation CPU Usage: 380 ms
