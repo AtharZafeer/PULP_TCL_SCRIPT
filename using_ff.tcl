@@ -4,12 +4,16 @@
 #create net ff/Q to mux/I1
 #create net mux_sel_pin
 
+current_instance D_FLIPFLOP
+
 
 set reg_count [llength [lindex [all_ffs]]]
 
 set reg_list [lindex [all_ffs]]
 
 set input_nets [get_nets -of_objects [get_pins -of_objects $reg_list -filter {REF_PIN_NAME=~D}]]
+
+current_instance
 
 for {set x 0} {$x< $reg_count} {incr x} { create_cell -reference FDRE [lindex $reg_list $x]_fdre }
 
@@ -41,8 +45,16 @@ for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_ne
 #make FDRE/D and FDRE/R inverted to make it work as per our logic
 for {set x 0} {$x< $reg_count} {incr x} { set_property IS_INVERTED 1 [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~D}] }
 
+#disconnect the FI module's output port
+remove_net [get_nets -of_objects [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out**}]]
+
+#connect the output of FI module to the mux_sel_pin
+for {set x 0} {$x< $reg_count} {incr x} {connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out[**}]]  }
+
+
+########################################################experimental####################################################################
 #create a port
-create_port -direction OUT  -from 0 -to $reg_count made_up_gnd_port
+create_port -direction INOUT  -from 0 -to $reg_count made_up_gnd_port
 
 #connect the port to mux_sel net
 for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_ports made_up_gnd_port[$x]]] }
