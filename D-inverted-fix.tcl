@@ -17,11 +17,10 @@ for {set x 0} {$x<$reg_count} {incr x} { create_cell -reference AND2B1L [lindex 
 
 for {set x 0} {$x< $reg_count} {incr x} { create_net [lindex $reg_list $x]_mux_sel [lindex $reg_list $x]_muxO_Din [lindex $reg_list $x]_FDREQ_AND [lindex $reg_list $x]_ANDO_MUXI1 }
 
-#connect net from output of and to DI of mux
-for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_FDREQ_AND] -objects  [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~Q}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~DI}]] }
+
 
 #connect net from output FDRE to AND_SRI
-for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_FDREQ_AND] -objects  [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~SRI}]] }
+for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_FDREQ_AND] -objects  [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~SRI}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~Q}]] }
 
 for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_ANDO_MUXI1] -objects  [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~O}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_mux] -filter {REF_PIN_NAME =~I1}]] }
 
@@ -41,11 +40,12 @@ for {set x 0} {$x< $reg_count} {incr x} {  connect_net -hierarchical -net [get_n
 for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets -of_objects [get_pins -of_objects [lindex $reg_list $x] -filter {REF_PIN_NAME=~CLR || REF_PIN_NAME=~R}]] -objects [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~R}]] }
 
 #connect the mux_sel net to mux/S pin and FDRE/CE pin for data propagation purposes
-for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_mux] -filter {REF_PIN_NAME=~S}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~CE}]] }
-
-#make FDRE/D and FDRE/R inverted to make it work as per our logic
-for {set x 0} {$x< $reg_count} {incr x} { set_property IS_INVERTED 1 [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~DI}] }
+for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_mux] -filter {REF_PIN_NAME=~S}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~CE}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~DI}]] }
 
 
-for {set x 0} {$x< $reg_count} {incr x} { set_property IS_INVERTED 1 [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~SRI}] }
+#disconnect the FI module's output port
+remove_net [get_nets -of_objects [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out**}]]
+
+#connect the output of FI module to the mux_sel_pin
+for {set x 0} {$x< $reg_count} {incr x} {connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out[**}]]  }
 
