@@ -53,8 +53,17 @@ for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_ne
 for {set x 0} {$x< $reg_count} {incr x} { connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_pins -of_objects [get_cells [lindex $reg_list $x]_mux] -filter {REF_PIN_NAME=~S}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_fdre] -filter {REF_PIN_NAME =~CE}] [get_pins -of_objects [get_cells [lindex $reg_list $x]_and] -filter {REF_PIN_NAME =~DI}]] }     
 
 #discconect the output port of our fault injector since we don't need it, let it "dangle"
-remove_net [get_nets -of_objects [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out**}]]   
+#FI_out_OBUF is the net that is connected to the FI_out pin of fault injector, the idea is that we remove the net and connect this pin to the mux_sel_pin
+#remove_net [get_nets -of_objects [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out**}]]   
+remove_net FI_out_OBUF 
 
 #now connect the output of our Fault injector to the  mux_sel_pin
-for {set x 0} {$x< $reg_count} {incr x} {connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out[**}]]  }  
+#for {set x 0} {$x< $reg_count} {incr x} {connect_net -hierarchical -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [get_pins -of_objects [get_cells fault_injector] -filter {REF_PIN_NAME=~FI_out[x]}]]  }  
+#get the output bus pins of our FI design
+set fault_injector_pin_list [lindex [get_pins -of_objects [get_cells fault_injector] -filter {BUS_NAME=~ FI_out}]]
+
+#connect one by one the mux_sel pin and the output bus pins. this will iterate only for number of registers even though, the number of output ports available in FI is higher (this parameter is set during synthesis by us in the fault injector design)
+for {set x 0} {$x< $reg_count} {incr x} {connect_net -hierarchical  -net [get_nets [lindex $reg_list $x]_mux_sel] -objects [list [lindex $fault_injector_pin_list $x]] -verbose}
+
+
 
